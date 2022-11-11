@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{listings}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -41,7 +42,7 @@ Hundreds of small, fine-grained components (referred to as "microservices") work
 
 \subsection{Microservices}
 
-Microservice architecture is an architectural pattern that arranges an application as a collection of loosely-coupled, fine-grained services, communicating through lightweight protocols. It allows teams to develop and deploy their services independently of others.
+Microservice architecture is an architectural pattern that arranges an application as a collection of loosely-coupled, fine-grained services, communicating through lightweight protocols. It allows teams to develop and deploy their services independently of others. Microservices are a popular architectural style for building applications that are resilient, highly scalable, independently deployable, and able to evolve quickly.
 
 Interfaces need to be designed carefully and treated as a public API.
 
@@ -49,7 +50,30 @@ One technique that is used is having multiple interfaces on the same service, or
 
 Decomposing an application into different smaller services can provide several benefits, such as modularity, scalability, integration of heterogeneous and legacy systems, and continuous integration, continuous delivery and deployment.
 
-\begin{figure}
+A successful microservices architecture requires a different approach to designing and building applications.
+A microservices architecture consists of a collection of small, autonomous services.
+
+Each service is self-contained and should implement a single business capability within a bounded context.
+
+A bounded context is a natural division within a business and provides an explicit boundary within which a domain model exists.
+
+\subsubsection{Comaprison with monolithic architecture}
+
+Microservices architecture splits up an application into independent codebases that perform one specific task. These modules communicate with each other through an Application Programming Interface to create the full functionality of an application.
+Microservices allow an application to grow by being self-contained and managed by a team dedicated to that functionality.
+Easy to scale: Using microservices, an application can be scaled horizontally, meaning each microservice can increase in size independently as its needs change.
+
+Horizontal scaling can be less costly than vertical scaling, and there is no limit to how much an application can scale.
+Microservices-based architecture allows teams to easily add additional functionality and new technologies to an application as needed. However, the way microservices are linked together adds a layer of complexity.
+Requires specialized skills: Building a microservices architecture requires specialized knowledge which not all developers may have.
+
+Teams who build microservices without the correct training can run into a myriad of challenges which may mean a delayed time to market and additional costs to bring in outside experts.
+Distributed security and testing: Each module will have its own security vulnerabilities and bugs.
+
+While this can be beneficial in preventing attacks, it also means more potential vulnerabilities to track, and debugging each individual element can become time-consuming.
+Extra costs: Utilizing microservices may save some costs, but will also likely require additional development resources to manage each microservice and its dependencies.
+
+\begin{figure}[!h]
     \begin{center}
         \includegraphics[width=0.3\textwidth]{figures/microservice.png}
     \end{center}
@@ -64,9 +88,13 @@ Kubernetes is a container-based platform that manages applications based on CPU,
 
 Kubernetes is a platform for scheduling and running containers on clusters of physical or virtual machines (VMs). It helps you fully implement and rely on a container-based infrastructure in production environments. Developers can also create cloud-native apps with Kubernetes as a runtime platform by using Kubernetes patterns.
 
+Kubernetes helps developers create multi-container applications by analyzing the configuration, finding resources appropriate for running the new containers, helping them connect to one another and to system resources, and monitoring the system for changes.
+
+
 \subsubsection{Autoscaling}
 The standard basis for autoscaling and scheduling in Kubernetes is resource utilization metrics.
-\begin{figure}
+
+\begin{figure}[!h]
     \begin{center}
         \includegraphics[width=0.3\textwidth]{figures/kubernetes.png}
     \end{center}
@@ -98,34 +126,61 @@ Many types of public and private Cloud systems require their users to declare ho
 
 Some work has been done for enhancing the efficiency by utilizing ML and kernel tracing.
 
-\section{Autopilot: workload autoscaling at google.\cite{b5}}
+\subsection{Autopilot: workload autoscaling at google.\cite{b5}}
 
 Google uses Autopilot to configure resources automatically, adjusting both the number of concurrent tasks in a job (horizontal scaling) and the CPU/memory limits for individual tasks (vertical scaling). Autopilot reduces slack by 23\% and the number of jobs severely impacted by OOMs by a factor of 10. Despite its advantages, ensuring that Autopilot was widely adopted took significant effort, including making potential recommendations easily visible to customers who had yet to opt in, automatically migrating certain categories of jobs, and adding support for custom recommenders.
 
-\section{Firm}
+\subsection{Firm}
 This paper presents FIRM, an intelligent fine-grained resource management framework that uses online telemetry data and machine-learning methods to predictably share resources across microservices to drive up overall utilization. FIRM reduces service level objectives (SLOs) violations by up to 16 while reducing overall requested CPU limit by up to 62\%.
-\subsection{Showar\cite{b4}}
+
+\subsection{Showar\cite{bShowar}}
 SHOWAR shows a 22\% improvement with eBPF tracing.
 
 \section{Experimentation}
 
+\subsection{Showar\cite{bShowar} implementation}
+
+As the authors implemented their implementation on DeathStarbench social-network microservice architecture, as a starting point of our project, we simulated their project and result.
+
+\subsubsection{Detecting Run Queue Latency}
+
+We introduced artificial load in linux server using 
+
+\texttt{stress --cpu  1 --timeout 20}
+
+Then we used eBPF to measure the run queue latency.
+
+\texttt{runqlat 5 1}
+
+It gave somewhat of a following graph:
+
+\begin{figure}[!h]
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{figures/runqlat.png}
+    \end{center}
+    \caption{Histogram of k}
+    \label{fig:}
+\end{figure}
+
+
 \subsection{System Setup}
 
-\begin{figure}
+\begin{figure}[!h]
     \begin{center}
         \includegraphics[width=0.4\textwidth]{figures/social-network.png}
     \end{center}
-    \caption{DeathStarbench\cite{b2} Social Network application using microservices architecture}
+    \caption{DeathStarbench\cite{bDeathStarBench} Social Network application using microservices architecture}
     \label{fig:social-network}
 \end{figure}
 
 
 \begin{thebibliography}{00}
     \bibitem{b54} Austin Parker, Daniel Spoonhower, Jonathan Mace, Ben Sigelman, and Rebecca Isaacs. 2020. Distributed tracing in practice: Instrumenting, analyzing, and debugging microservices. O’Reilly Media.
-    \bibitem{b2} Yu Gan, Yanqi Zhang, Dailun Cheng, Ankitha Shetty, Priyal Rathi, Nayan Katarki, Ariana Bruno, Justin Hu, Brian Ritchken, Brendon Jackson, et al. 2019. An open-source benchmark suite for microservices and their hardware-software implications for cloud \& edge systems. In Proceedings of the Twenty-Fourth International Conference on Archi- tectural Support for Programming Languages and Operating Systems. 3–18.
+    \bibitem{bDeathStarBench} Yu Gan, Yanqi Zhang, Dailun Cheng, Ankitha Shetty, Priyal Rathi, Nayan Katarki, Ariana Bruno, Justin Hu, Brian Ritchken, Brendon Jackson, et al. 2019. An open-source benchmark suite for microservices and their hardware-software implications for cloud \& edge systems. In Proceedings of the Twenty-Fourth International Conference on Archi- tectural Support for Programming Languages and Operating Systems. 3–18.
     \bibitem{b3} \sloppy Martin Fowler. "Microservices". http://martinfowler.com/articles/\\microservices.html
-    \bibitem{b4} Baarzi, Ataollah Fatahi, and George Kesidis. "Showar: Right-sizing and efficient scheduling of microservices." Proceedings of the ACM Symposium on Cloud Computing. 2021.
+    \bibitem{bShowar} Baarzi, Ataollah Fatahi, and George Kesidis. "Showar: Right-sizing and efficient scheduling of microservices." Proceedings of the ACM Symposium on Cloud Computing. 2021.
     \bibitem{b5} Rzadca, Krzysztof, et al. "Autopilot: workload autoscaling at google." Proceedings of the Fifteenth European Conference on Computer Systems. 2020.
     \bibitem{b6} 
+    \bibitem{bebpf} Miano, Sebastiano, et al. "A framework for eBPF-based network functions in an era of microservices." IEEE Transactions on Network and Service Management 18.1 (2021): 133-151.
 \end{thebibliography}
 \end{document}

@@ -48,11 +48,45 @@ Interfaces need to be designed carefully and treated as a public API.
 One technique that is used is having multiple interfaces on the same service, or multiple versions of the same service, so as to not disrupt existing users of the code. \cite{b3}
 
 Decomposing an application into different smaller services can provide several benefits, such as modularity, scalability, integration of heterogeneous and legacy systems, and continuous integration, continuous delivery and deployment.
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.3\textwidth]{figures/microservice.png}
+    \end{center}
+    \caption{Microservices architecture}
+    \label{fig:2}
+\end{figure}
+
+
 \subsection{Kubernetes}
+
+Kubernetes is a container-based platform that manages applications based on CPU, memory, or custom metrics. It is loosely coupled and extensible to meet different workloads.
+
+Kubernetes is a platform for scheduling and running containers on clusters of physical or virtual machines (VMs). It helps you fully implement and rely on a container-based infrastructure in production environments. Developers can also create cloud-native apps with Kubernetes as a runtime platform by using Kubernetes patterns.
+
+\subsubsection{Autoscaling}
+The standard basis for autoscaling and scheduling in Kubernetes is resource utilization metrics.
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.3\textwidth]{figures/kubernetes.png}
+    \end{center}
+    \caption{Kubernetes}
+    \label{fig:Kubernetes}
+\end{figure}
+
+\subsection{Tracing}
+
+Tracing is the specialized use of logging to record information about a program’s flow of execution.
+Trace logs are used by programmers for debugging purposes, and by system administrators to diagnose common problems with software.
 
 \subsection{Distributed Tracing}
                                                                                                                      Tracing the execution of a computer program is not a new concept, but modern architectures such as microservices have fundamentally broken the classic methods of profiling, debugging, and monitoring. Distributed tracing stands ready to fix these issues, but can be hard.
                                                                                                                      In a distributed system a daemon process running on a system can be measured in several dimensions, including the amount of memory mapped to the process. We can view open file handles, calculate CPU utilization, and do all sorts of things, but we can't trace the application.
+
+\section{Related Work}
+
+Some work has been done for enhancing the efficiency by utilizing ML and kernel tracing.
+
 
 \section{Experimentation}
 

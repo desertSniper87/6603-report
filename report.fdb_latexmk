@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1668102271 "report.tex" "report.pdf" "report" 1668102271
+["pdflatex"] 1668147817 "report.tex" "report.pdf" "report" 1668147818
   "/etc/texmf/web2c/texmf.cnf" 1588407215 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -79,10 +79,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1588409338 8257677 263831b2fb1470194324e9af3a55795e ""
   "IEEEtran.cls" 1668092812 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
   "fig1.png" 1668092812 4535 3b4c70b1b9361fad686e8d234c8fe506 ""
+  "figures/kubernetes.png" 1668145115 18541 9c9002795407a158bb41871ce84aa4df ""
+  "figures/microservice.png" 1668108382 46298 daf4f950ffe200d14776e630a191810b ""
   "figures/social-network.png" 1668098096 151249 d1fe14edf855f50667bbb3ea2e275581 ""
-  "report.aux" 1668102271 3145 d96288de3be9b302f4a7969e8333fe19 "pdflatex"
-  "report.tex" 1668102271 17608 6d95f557a216cf16bbf02a1985572dea ""
+  "report.aux" 1668147818 3754 8df4333b0f7ce74806659e2d3bd3148b "pdflatex"
+  "report.tex" 1668147815 18995 f4b1253e6ee2eaaf1dc7375fe468ac5f ""
   (generated)
   "report.pdf"
-  "report.aux"
   "report.log"
+  "report.aux"

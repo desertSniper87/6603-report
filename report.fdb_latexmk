@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1668191969 "report.tex" "report.pdf" "report" 1668191969
+["pdflatex"] 1668196082 "report.tex" "report.pdf" "report" 1668196083
   "/etc/texmf/web2c/texmf.cnf" 1588407215 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -38,6 +38,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty" 1581112666 2821 2c0928feafd5527387e29a1af774d030 ""
   "/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty" 1425427964 26218 19edeff8cdc2bcb704e8051dc55eb5a7 ""
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "/usr/share/texlive/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def" 1515537368 17334 520b9b85ad8a2a48eda3f643e27a5179 ""
@@ -58,14 +59,17 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1588409256 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1588409338 8257677 263831b2fb1470194324e9af3a55795e ""
   "IEEEtran.cls" 1668092812 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
+  "figures/Cloud-computing.svg.png" 1668193976 116457 8f5c605bfa34fe2a9ea1855362e88684 ""
   "figures/kubernetes.png" 1668145115 18541 9c9002795407a158bb41871ce84aa4df ""
   "figures/microservice.png" 1668108382 46298 daf4f950ffe200d14776e630a191810b ""
+  "figures/microservices-logical.png" 1668194137 23335 0627258934cb99ee96f430558e3f028c ""
   "figures/openstack-kube.png" 1668191225 161327 9347ec85cccf0a9276bea77877fcd076 ""
   "figures/runqlat.png" 1668176030 18098 ae2a203a068fc3b2ee0f0d0c083aa3d5 ""
+  "figures/showar.png" 1668192877 184134 8b7c27e50c7b253a4d28f416381dc05c ""
   "figures/social-network.png" 1668098096 151249 d1fe14edf855f50667bbb3ea2e275581 ""
-  "report.aux" 1668191969 3494 ecd7e9a462816477933847b31e19edb7 "pdflatex"
-  "report.tex" 1668191967 13939 535aaf9ab8d8a776f9077e3f3aa79b24 ""
+  "report.aux" 1668196083 4175 de38d59d9bb15a8fe385fe69020e079b "pdflatex"
+  "report.tex" 1668196080 15857 ef509429591d0af7d8b1fdcdc02d39ae ""
   (generated)
   "report.pdf"
-  "report.log"
   "report.aux"
+  "report.log"

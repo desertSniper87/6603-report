@@ -8,6 +8,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{listings}
+\usepackage{float}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -37,7 +38,15 @@ Designing distributed cloud applications that are decoupled into a bunch of smal
 
 \section{Introduction}
 \subsection{Cloud Computing}
-Hundreds of small, fine-grained components (referred to as "microservices") work together to serve end-user requests in a distributed environment under the microservices architecture, a recent and growingly popular paradigm for developing interactive and user-facing services [1, 4, 10, 16, 35]. There are various advantages to splitting up an application into smaller microservices. It enables several development teams to independently operate on disparate microservices that may be technologically dissimilar [61]. Additionally, because each microservice may grow and operate independently based on its own state and incoming workload, the program as a whole performs better and is more reliable [63]. A microservices architecture may also make it easier to debug performance and accuracy problems \cite{b54}
+Hundreds of small, fine-grained components (referred to as "microservices") work together to serve end-user requests in a distributed environment under the microservices architecture, a recent and growingly popular paradigm for developing interactive and user-facing services\cite{netflix, azure, google, appEngine, burns}. There are various advantages to splitting up an application into smaller microservices. It enables several development teams to independently operate on disparate microservices that may be technologically dissimilar\cite{wolff}. Additionally, because each microservice may grow and operate independently based on its own state and incoming workload, the program as a whole performs better and is more reliable\cite{hao}. A microservices architecture may also make it easier to debug performance and accuracy problems \cite{b54}
+
+\begin{figure}[!h]
+    \begin{center}
+        \includegraphics[width=0.4\textwidth]{figures/Cloud-computing.svg.png}
+    \end{center}
+    \caption{Cloud Computing}
+    \label{fig:cloud}
+\end{figure}
 
 
 \subsection{Microservices}
@@ -56,6 +65,14 @@ A microservices architecture consists of a collection of small, autonomous servi
 Each service is self-contained and should implement a single business capability within a bounded context.
 
 A bounded context is a natural division within a business and provides an explicit boundary within which a domain model exists.
+
+\begin{figure}[!h]
+    \begin{center}
+        \includegraphics[width=0.4\textwidth]{figures/microservices-logical.png}
+    \end{center}
+    \caption{Microservice architecture}
+    \label{fig:microservice}
+\end{figure}
 
 \subsubsection{Comaprison with monolithic architecture}
 
@@ -136,6 +153,15 @@ This paper presents FIRM, an intelligent fine-grained resource management framew
 \subsection{Showar\cite{bShowar}}
 SHOWAR shows a 22\% improvement with eBPF tracing.
 
+\begin{figure}[!ht]
+    \begin{center}
+        \includegraphics[width=0.45\textwidth]{figures/showar.png}
+    \end{center}
+    \caption{Showar Architecture}
+    \label{fig:showar}
+\end{figure}
+
+
 \section{Experimentation}
 
 \subsection{Showar\cite{bShowar} implementation}
@@ -215,5 +241,20 @@ We were unable to setup a prometheus exporter for lack of time in the course. In
     \bibitem{b6} 
     \bibitem{bebpf} Miano, Sebastiano, et al. "A framework for eBPF-based network functions in an era of microservices." IEEE Transactions on Network and Service Management 18.1 (2021): 133-151.
     \bibitem{bstack} Rosado, Tiago, and Jorge Bernardino. "An overview of openstack architecture." Proceedings of the 18th International Database Engineering \& Applications Symposium. 2014.
+    \bibitem{netflix} \sloppy April, 01, 2021. Adopting microservices at Netflix. https://www.nginx.com/blog/microservices-at-netflix-architectural-best-practices/.
+    \bibitem{azure} \sloppy April, 05, 2021. Microsoft Microservices Architecture Guide. https://docs.microsoft.com/enus/azure/architecture/guide/architecture-styles/microservices.
+    \bibitem{google} \sloppy April, 10, 2021. Adapt or Die: A microservices story at Google, December. https://www.slideshare.net/apigee/adapt-or-die-a-microservicesstory-at-google.
+    \bibitem{appEngine} \sloppy  April, 21, 2021. Microservices Architecture on Google App Engine. https://cloud.google.com/appengine/docs/standard/python/microserviceson-app-engine.
+    \bibitem{burns} Brendan Burns. 2018. Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services. " O’Reilly Media, Inc.".
+    \bibitem{wolff} Eberhard Wolff. 2016. Microservices: flexible software architecture. Addison-Wesley Professional.
+    \bibitem{hao} Hao Zhou, Ming Chen, Qian Lin, Yong Wang, Xiaobin She, Sifan Liu, Rui Gu, Beng Chin Ooi, and Junfeng Yang. 2018. Overload control for scaling wechat microservices. In Proceedings of the ACM Symposium on Cloud Computing. 149–161.
+
+
+
+
+    
+
+
+
 \end{thebibliography}
 \end{document}

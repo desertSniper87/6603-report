@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.2)  12 NOV 2022 00:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.2)  12 NOV 2022 01:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -239,83 +239,153 @@ File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+ (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count272
+\float@exts=\toks22
+\float@box=\box51
+\@float@everytoks=\toks23
+\@floatcapt=\box52
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count272
-\l__pdf_internal_box=\box51
+\l__kernel_color_stack_int=\count273
+\l__pdf_internal_box=\box53
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count273
+\scratchcounter=\count274
 \scratchdimen=\dimen173
-\scratchbox=\box52
-\nofMPsegments=\count274
-\nofMParguments=\count275
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count276
+\scratchbox=\box54
+\nofMPsegments=\count275
+\nofMParguments=\count276
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count277
 \MPscratchDim=\dimen174
-\MPnumerator=\count277
-\makeMPintoPDFobject=\count278
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count278
+\makeMPintoPDFobject=\count279
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count279
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+\c@lstlisting=\count280
+<figures/Cloud-computing.svg.png, id=1, 803.0pt x 726.715pt>
+File: figures/Cloud-computing.svg.png Graphic file (type png)
+<use figures/Cloud-computing.svg.png>
+Package pdftex.def Info: figures/Cloud-computing.svg.png  used on input line 45.
+(pdftex.def)             Requested size: 206.39685pt x 186.79022pt.
 
 
-]
-<figures/microservice.png, id=10, 1622.06pt x 1541.76pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/microservices-logical.png, id=3, 495.35063pt x 200.24812pt>
+File: figures/microservices-logical.png Graphic file (type png)
+<use figures/microservices-logical.png>
+Package pdftex.def Info: figures/microservices-logical.png  used on input line 71.
+(pdftex.def)             Requested size: 206.39685pt x 83.43753pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./figures/Cloud-computing.svg.png>]
+<figures/microservice.png, id=14, 1622.06pt x 1541.76pt>
 File: figures/microservice.png Graphic file (type png)
 <use figures/microservice.png>
-Package pdftex.def Info: figures/microservice.png  used on input line 78.
+Package pdftex.def Info: figures/microservice.png  used on input line 95.
 (pdftex.def)             Requested size: 154.80157pt x 147.12743pt.
-<figures/kubernetes.png, id=11, 240.9pt x 182.6825pt>
+<figures/kubernetes.png, id=15, 240.9pt x 182.6825pt>
 File: figures/kubernetes.png Graphic file (type png)
 <use figures/kubernetes.png>
-Package pdftex.def Info: figures/kubernetes.png  used on input line 99.
+Package pdftex.def Info: figures/kubernetes.png  used on input line 116.
 (pdftex.def)             Requested size: 154.80157pt x 117.39305pt.
- [2 <./figures/microservice.png> <./figures/kubernetes.png>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 149.
+ [2 <./figures/microservices-logical.png> <./figures/microservice.png> <./figures/kubernetes.png>]
+<figures/showar.png, id=21, 855.195pt x 341.275pt>
+File: figures/showar.png Graphic file (type png)
+<use figures/showar.png>
+Package pdftex.def Info: figures/showar.png  used on input line 158.
+(pdftex.def)             Requested size: 232.19843pt x 92.66101pt.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 175.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-<figures/runqlat.png, id=18, 602.25pt x 372.39125pt>
+<figures/runqlat.png, id=22, 602.25pt x 372.39125pt>
 File: figures/runqlat.png Graphic file (type png)
 <use figures/runqlat.png>
-Package pdftex.def Info: figures/runqlat.png  used on input line 159.
+Package pdftex.def Info: figures/runqlat.png  used on input line 185.
 (pdftex.def)             Requested size: 232.19843pt x 143.57846pt.
-<figures/social-network.png, id=19, 786.68906pt x 430.60875pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/social-network.png, id=23, 786.68906pt x 430.60875pt>
 File: figures/social-network.png Graphic file (type png)
 <use figures/social-network.png>
-Package pdftex.def Info: figures/social-network.png  used on input line 187.
+Package pdftex.def Info: figures/social-network.png  used on input line 213.
 (pdftex.def)             Requested size: 206.39685pt x 112.97406pt.
-<figures/openstack-kube.png, id=20, 953.5625pt x 721.69624pt>
+<figures/openstack-kube.png, id=24, 953.5625pt x 721.69624pt>
 File: figures/openstack-kube.png Graphic file (type png)
 <use figures/openstack-kube.png>
-Package pdftex.def Info: figures/openstack-kube.png  used on input line 198.
+Package pdftex.def Info: figures/openstack-kube.png  used on input line 224.
 (pdftex.def)             Requested size: 232.19843pt x 175.73242pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./figures/showar.png> <./figures/runqlat.png> <./figures/social-network.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+[]\OT1/ptm/m/n/8 April, 01, 2021. Adopt-ing mi-croser-vices at Net-flix.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+\OT1/ptm/m/n/8 https://www.nginx.com/blog/microservices-at-netflix-architectural-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+[]\OT1/ptm/m/n/8 April, 05, 2021. Mi-crosoft Mi-croser-vices Ar-chi-tec-ture Guide.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+\OT1/ptm/m/n/8 https://docs.microsoft.com/enus/azure/architecture/guide/architecture-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+[]\OT1/ptm/m/n/8 April, 10, 2021. Adapt or Die: A mi-croser-vices story at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+\OT1/ptm/m/n/8 Google, De-cem-ber. https://www.slideshare.net/apigee/adapt-or-die-
+ []
+
+
+Overfull \hbox (8.89342pt too wide) in paragraph at lines 247--248
+\OT1/ptm/m/n/8 https://cloud.google.com/appengine/docs/standard/python/microserviceson-
+ []
 
 
 ** Conference Paper **
@@ -328,20 +398,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3 <./figures/runqlat.png> <./figures/social-network.png (PNG copy)> <./figures/openstack-kube.png>] (./report.aux) ) 
+[4
+
+ <./figures/openstack-kube.png>] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 5201 strings out of 481239
- 74311 string characters out of 5920378
- 321261 words of memory out of 5000000
- 20439 multiletter control sequences out of 15000+600000
+ 5286 strings out of 481239
+ 75664 string characters out of 5920378
+ 323703 words of memory out of 5000000
+ 20517 multiletter control sequences out of 15000+600000
  562220 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,8n,37p,830b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,8n,37p,876b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (3 pages, 491261 bytes).
+Output written on report.pdf (4 pages, 808441 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

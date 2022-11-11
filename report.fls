@@ -138,6 +138,9 @@ INPUT ./figures/runqlat.png
 INPUT figures/social-network.png
 INPUT ./figures/social-network.png
 INPUT ./figures/social-network.png
+INPUT figures/openstack-kube.png
+INPUT ./figures/openstack-kube.png
+INPUT ./figures/openstack-kube.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT report.aux

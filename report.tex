@@ -156,14 +156,31 @@ It gave somewhat of a following graph:
 
 \begin{figure}[!h]
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{figures/runqlat.png}
+        \includegraphics[width=0.45\textwidth]{figures/runqlat.png}
     \end{center}
-    \caption{Histogram of k}
+    \caption{Histogram of queue latency comparing with artificial load given to the server}
     \label{fig:}
 \end{figure}
 
+The authors have used 95th quartile as the measure to autoscale kubernetes.
 
 \subsection{System Setup}
+
+For deploying our autoscaling algorithm developed using ebpf, we devised several ways:
+
+\begin{enumerate}
+    \item Deploying in a local machine.
+        \begin{enumerate}
+            \item Using Minikube (VirtualBox and Docker Driver)
+            \item Using Apache Kind
+        \end{enumerate}
+    \item Deploying in Cloud environment.
+        \begin{enumerate}
+            \item In Cloud Vendors (AWS, Azure, GCP and DigitalOcean)
+            \item In MetaCloud Frameworks (CloudLab)
+        \end{enumerate}
+\end{enumerate}
+
 
 \begin{figure}[!h]
     \begin{center}
@@ -174,6 +191,21 @@ It gave somewhat of a following graph:
 \end{figure}
 
 
+We were able to run the DeathStarbench framework in Local Machine. But, we were unable to run using Free instances of Cloud Vendors(AWS, Azure, GCP and DigitalOcean). Finally, we were able to run DeathStarbench using Cloudlab instances. We used 1 master node and 3 follower nodes in openstack \cite{bstack} configuration. Then we ran Microk8s (ubuntu specific Kubernetes framework) in them. 
+
+\begin{figure}[!h]
+    \begin{center}
+        \includegraphics[width=0.45\textwidth]{figures/openstack-kube.png}
+    \end{center}
+    \caption{Kubernetes in cloudlab openstack}
+    \label{fig:kube-cloudlab}
+\end{figure}
+
+\section{Future Work}
+
+We were unable to setup a prometheus exporter for lack of time in the course. In the near future, we will try to implement a lTTng metrics exporter in cloudlab and gather microservice data and pass the data to Kubernetes autoscaler accordingly. 
+
+
 \begin{thebibliography}{00}
     \bibitem{b54} Austin Parker, Daniel Spoonhower, Jonathan Mace, Ben Sigelman, and Rebecca Isaacs. 2020. Distributed tracing in practice: Instrumenting, analyzing, and debugging microservices. O’Reilly Media.
     \bibitem{bDeathStarBench} Yu Gan, Yanqi Zhang, Dailun Cheng, Ankitha Shetty, Priyal Rathi, Nayan Katarki, Ariana Bruno, Justin Hu, Brian Ritchken, Brendon Jackson, et al. 2019. An open-source benchmark suite for microservices and their hardware-software implications for cloud \& edge systems. In Proceedings of the Twenty-Fourth International Conference on Archi- tectural Support for Programming Languages and Operating Systems. 3–18.
@@ -182,5 +214,6 @@ It gave somewhat of a following graph:
     \bibitem{b5} Rzadca, Krzysztof, et al. "Autopilot: workload autoscaling at google." Proceedings of the Fifteenth European Conference on Computer Systems. 2020.
     \bibitem{b6} 
     \bibitem{bebpf} Miano, Sebastiano, et al. "A framework for eBPF-based network functions in an era of microservices." IEEE Transactions on Network and Service Management 18.1 (2021): 133-151.
+    \bibitem{bstack} Rosado, Tiago, and Jorge Bernardino. "An overview of openstack architecture." Proceedings of the 18th International Database Engineering \& Applications Symposium. 2014.
 \end{thebibliography}
 \end{document}

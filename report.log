@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.2)  11 NOV 2022 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.2)  11 NOV 2022 14:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -276,32 +276,9 @@ Package pdftex.def Info: figures/kubernetes.png  used on input line 71.
 <figures/social-network.png, id=14, 786.68906pt x 430.60875pt>
 File: figures/social-network.png Graphic file (type png)
 <use figures/social-network.png>
-Package pdftex.def Info: figures/social-network.png  used on input line 97.
+Package pdftex.def Info: figures/social-network.png  used on input line 116.
 (pdftex.def)             Requested size: 206.39685pt x 112.97406pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 121.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 121.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 156.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [2 <./figures/kubernetes.png> <./figures/social-network.png (PNG copy)>]
-<fig1.png, id=23, 82.1469pt x 71.5473pt>
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 261.
-(pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 272.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 272.
- [3]
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -313,20 +290,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4 <./fig1.png (PNG copy)>] (./report.aux) ) 
+[2 <./figures/kubernetes.png> <./figures/social-network.png (PNG copy)>] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 3929 strings out of 481239
- 56051 string characters out of 5920378
- 304363 words of memory out of 5000000
- 19151 multiletter control sequences out of 15000+600000
- 574267 words of font info for 101 fonts, out of 8000000 for 9000
+ 3807 strings out of 481239
+ 54418 string characters out of 5920378
+ 300308 words of memory out of 5000000
+ 19064 multiletter control sequences out of 15000+600000
+ 561705 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,11n,37p,830b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (4 pages, 372371 bytes).
+ 30i,8n,37p,830b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (2 pages, 303736 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 34 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
